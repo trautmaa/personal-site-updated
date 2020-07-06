@@ -1,0 +1,31 @@
+export const SKILLS_DATA = {
+    Languages: [
+      'Typescript',
+      'JavaScript',
+      'Sass',
+      'Bash',
+      'CSS',
+      'Python',
+      'SQL',
+    ],
+    Tools: [
+      'React',
+      'NodeJS',
+      'Webpack',
+      'Netlify Lambda',
+      'Docker',
+      'Jest',
+      'Enzyme',
+      'React Testing Library',
+      'D3',
+      'MongoDB',
+    ],
+    'Soft Skills': [
+      'Public Speaking',
+      'Mentoring',
+      'Writing',
+      'Conflict Resolution',
+      'Developer Empathy',
+      'Agile - Scrum',
+    ],
+  };
