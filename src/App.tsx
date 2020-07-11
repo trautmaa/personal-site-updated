@@ -1,6 +1,6 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
-import { Router, Link, Location } from '@reach/router';
+import { Router } from '@reach/router';
 import FancyDiv from 'components/FancyDiv';
 import Dynamic from 'containers/Dynamic';
 import './app.css';
@@ -13,18 +13,13 @@ function App() {
   console.log('App -> window.location.pathname', window.location.pathname);
   return (
     <Root>
-      <Location>
-        {(props) =>
-          props.location.pathname !== '/' && (
-            <nav>
-              <Link className='home' to='/'>Home</Link>
-              <Link to='/profile'>Profile</Link>
-              <Link to='/blog'>Blog</Link>
-              <Link to='/dynamic'>Dynamic</Link>
-            </nav>
-          )
-        }
-      </Location>
+      {/* <nav> */}
+        {/* <Link className='home' to='/'> */}
+          {/* Alex Trautman */}
+        {/* </Link> */}
+        {/* <Link to='/blog'>Blog</Link> */}
+        {/* <Link to='/dynamic'>Dynamic</Link> */}
+      {/* </nav> */}
       <div className='content'>
         <FancyDiv>
           <React.Suspense fallback={<em>Loading...</em>}>

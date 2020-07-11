@@ -5,9 +5,9 @@ import headshot from '../assets/atheadshot.png';
 // @ts-ignore
 import miniatheadshot from '../assets/mini/atheadshot.svg';
 // @ts-ignore
-import cold from '../assets/cold.jpg';
+import frisbee from '../assets/frisbee.jpg';
 // @ts-ignore
-import minicold from '../assets/mini/cold.svg';
+import minifrisbee from '../assets/mini/frisbee.svg';
 // @ts-ignore
 import fish from '../assets/fish.jpg';
 // @ts-ignore
@@ -17,6 +17,7 @@ import { SKILLS_DATA } from '../data/skills';
 import { WORK_EXPERIENCE_DATA } from '../data/work';
 import { VOLUNTEER_EXPERIENCE_DATA } from '../data/volunteer';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import TextOverlay from './TextOverlay';
 
 export default () => (
   <div className='profile'>
@@ -34,7 +35,6 @@ export default () => (
             </div>
             <div className='name-section'>
               <h2>Alex Trautman</h2>
-              <Links />
             </div>
           </div>
           <p>
@@ -46,27 +46,34 @@ export default () => (
             I have a high attention to detail, and I’m always looking for ways
             to work better.
           </p>
-          {/* <p>
-          I have guided teens to build confidence with educational backcountry
-          experiences for a total of 100+ days and nights.
-        </p>
-        <p>
-          I currently volunteer teaching ultimate after school to Atlanta youth,
-          and I am a captain of Atlanta’s top ultimate frisbee team Chain
-          Lightning.
-        </p> */}
+          <Links />
         </div>
         <div className='panel card collage'>
-          <LazyLoadImage
-            alt={'Alex Trautman'}
-            src={cold}
-            placeholderSrc={minicold}
-          />
-          <LazyLoadImage
-            alt={'Alex Trautman'}
-            src={fish}
-            placeholderSrc={minifish}
-          />
+          <h3>About Me</h3>
+          <div className='images-wrapper'>
+            <TextOverlay
+              img={
+                <LazyLoadImage
+                  alt={'Alex Trautman'}
+                  src={frisbee}
+                  placeholderSrc={minifrisbee}
+                />
+              }
+              text={
+                'Demonstrating proper pancake technique with the Atlanta Hustle.'
+              }
+            />
+            <TextOverlay
+              img={
+                <LazyLoadImage
+                  alt={'Alex Trautman'}
+                  src={fish}
+                  placeholderSrc={minifish}
+                />
+              }
+              text={'Wrangling an Alaskan salmon.'}
+            />
+          </div>
         </div>
       </div>
       <div className='panel right'>
@@ -84,26 +91,6 @@ export default () => (
             <b>Major</b>
             <span>Computer Science</span>
           </p>
-          {/* <p>
-            <b>Hometown</b>
-            <span>Lexington, MA</span>
-          </p>
-          <p>
-            <b>Cats or Dogs</b>
-            <span>Woof</span>
-          </p>
-          <p>
-            <b>Hobbies</b>
-            <span>Running, reading, pottery</span>
-          </p>
-          <p>
-            <b>Sports</b>
-            <span>Ultimate frisbee</span>
-          </p>
-          <p>
-            <b>Other coursework</b>
-            <span>Studio Art, Math</span>
-          </p> */}
         </div>
         <div className='panel card profile-section skills'>
           <h3>Skills</h3>
