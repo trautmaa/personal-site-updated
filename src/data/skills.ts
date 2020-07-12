@@ -11,6 +11,8 @@ export const SKILLS_DATA = {
     Tools: [
       'React',
       'NodeJS',
+      'Redux',
+      'Mobx',
       'Webpack',
       'Netlify Lambda',
       'Docker',
