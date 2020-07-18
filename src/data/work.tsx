@@ -23,11 +23,21 @@ export const WORK_EXPERIENCE_DATA: ExperienceSectionProps[] = [
     location: 'Atlanta, GA',
     dateRange: 'September, 2018 - Current',
     body: (
-      <p>
-        Taught sophomores at The New School the basics of web development
-        including HTML, CSS and Bootstrap, and JavaScript. Guided students
-        through the creation of their own personal websites.
-      </p>
+      <>
+        <p>
+          Improved and contributed to a responsive React component library.
+          Built a dashboard-creation drag-and-drop tool (Typescript, React,
+          Redux, Lerna) for data visualization. Built role-based access
+          management (RBAC) user interface.
+        </p>
+        <p style={{ marginBottom: '0rem' }}>
+          🎉 Winning team - Hackathon 2019 - Forge Notify Notification Engine
+        </p>
+        <p>
+          🎉 Winning team - Hackathon 2018 - Sky View Airport Logistics
+          Management
+        </p>
+      </>
     ),
   },
   {
