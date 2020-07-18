@@ -1,11 +1,11 @@
 import React from 'react';
 import Links from 'components/Links';
 // @ts-ignore
-import headshot from '../assets/atheadshot.png';
+import headshot from '../assets/atheadshot.jpg';
 // @ts-ignore
 import miniatheadshot from '../assets/mini/atheadshot.svg';
 // @ts-ignore
-import frisbee from '../assets/frisbee.jpg';
+import frisbee from '../assets/frisbee.jpeg';
 // @ts-ignore
 import minifrisbee from '../assets/mini/frisbee.svg';
 // @ts-ignore
@@ -38,7 +38,7 @@ export default () => (
             </div>
           </div>
           <p>
-            I love people, problem solving and test-driven development. I
+            I love people and problem solving. I
             currently work as a front-end focused software engineer at Honeywell
             building developer software.
           </p>
@@ -95,7 +95,7 @@ export default () => (
         <div className='panel card profile-section skills'>
           <h3>Skills</h3>
           {Object.keys(SKILLS_DATA).map((key) => (
-            <>
+            <div key={key}>
               <p>{key}</p>
               <div className='section'>
                 {SKILLS_DATA[key as keyof typeof SKILLS_DATA].map(
@@ -104,7 +104,7 @@ export default () => (
                   )
                 )}
               </div>
-            </>
+            </div>
           ))}
         </div>
         <div className='panel card profile-section'>
@@ -129,6 +129,7 @@ export default () => (
             ({ imgSrc, company, jobTitle, location, dateRange, body }) => (
               <ExperienceSection
                 imgSrc={imgSrc}
+                key={company}
                 company={company}
                 jobTitle={jobTitle}
                 location={location}

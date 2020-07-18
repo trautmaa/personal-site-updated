@@ -33,6 +33,7 @@
     "@types/react-hot-loader": "^4.1.0",
     "@types/webpack-env": "^1.14.0",
     "react-hot-loader": "^4.12.11",
+    "react-static-plugin-favicons": "^2.0.0",
     "serve": "^11.1.0",
     "sqip": "^0.3.3",
     "typescript": "^3.5.3"
